@@ -20,8 +20,12 @@
                 <div class="dotted"></div>
                 <span class="material-symbols-outlined chain">link</span>
                 <h1>AFTAC TRAINING</h1>
-                <p>Standard Operation Procedures Links</p>
-                <p>Click the icons on the right to display the links</p>
+                <p class="p1">Standard Operation Procedures Links</p>
+                <p class="p2">Click the icons on the right to display the links</p>
+                <div class="top"></div>
+                <div class="left"></div>
+                <div class="bottom"></div>
+                <div class="right"></div>
             </div><!-- Main Circle End -->
             <div class="sections_half_circle"><!-- Half Circle -->
                 <img class="MyT" src="https://usaf.dps.mil/:u:/r/sites/a-staff/A1/A1H/Shared%20Documents/SharepointSystemFiles/MyTLogo.svg?csf=1&web=1&e=okGdWz" alt="">
@@ -134,7 +138,6 @@ body{
     height:1000px;
     margin-top: 10%;
     position:absolute;
-    background-color: pink;
     align-items:center;
 }
 .white_round {
@@ -147,6 +150,9 @@ body{
     z-index: 4;
     text-align: center;
     margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
 }
 .dashed {
     position: absolute;
@@ -181,6 +187,61 @@ body{
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size:220%;
+    font-size:400%;
+}
+h1{
+    font-size: 260%;
+    color: #808080;
+}
+.p1 {
+    font-size: 145%;
+    color: #808080;
+    width: 75%;
+    white-space: wrap;
+    position:absolute;
+    padding-top: 15%;
+}
+.p2 {
+    font-size: 120%;
+    color: #808080;
+    width: 75%;
+    white-space: wrap;
+    transform: translateY(150%);
+}
+.top {
+    position: absolute;
+    width: 5%;
+    height:5%;
+    aspect-ratio: 1/1;
+    background-color: #E23B00;
+    border-radius: 50%;
+    top:2%;
+}
+.left{
+    position: absolute;
+    width: 5%;
+    height:5%;
+    aspect-ratio: 1/1;
+    background-color: #E23B00;
+    border-radius: 50%;
+    left:2%;
+}
+.bottom {
+    position: absolute;
+    width: 5%;
+    height:5%;
+    aspect-ratio: 1/1;
+    background-color: #E23B00;
+    border-radius: 50%;
+    bottom:2%;
+}
+.right {
+    position: absolute;
+    width: 5%;
+    height:5%;
+    aspect-ratio: 1/1;
+    background-color: #E23B00;
+    border-radius: 50%;
+    right:2%;
 }
 </style>
