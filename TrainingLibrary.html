@@ -15,21 +15,25 @@
 <body>
     <div class="library"><!-- Library -->
         <section class="navigation"><!-- Navigation -->
-            <div class="white_round"><!-- Main Circle -->
-                <div class="dashed"></div>
-                <div class="dotted"></div>
-                <span class="material-symbols-outlined chain">link</span>
-                <h1>AFTAC TRAINING</h1>
-                <p class="p1">Standard Operation Procedures Links</p>
-                <p class="p2">Click the icons on the right to display the links</p>
-                <div class="top"></div>
-                <div class="left"></div>
-                <div class="bottom"></div>
-                <div class="right"></div>
-            </div><!-- Main Circle End -->
+            <div class="circle_gray"><!-- Gray Circle -->
+                <div class="white_round"><!-- Main Circle -->
+                    <div class="dashed"></div>
+                    <div class="dotted"></div>
+                    <span class="material-symbols-outlined chain">link</span>
+                    <h1>AFTAC TRAINING</h1>
+                    <p class="p1">Standard Operation Procedures Links</p>
+                    <p class="p2">Click the icons on the right to display the links</p>
+                    <div class="top"></div>
+                    <div class="left"></div>
+                    <div class="bottom"></div>
+                    <div class="right"></div>
+                </div><!-- Main Circle End -->
+            </div><!-- Gray Circle End -->
             <div class="sections_half_circle"><!-- Half Circle -->
-                <div class="outer-arc"></div>
-                <div class="inner-arc"></div>
+                <div class="outer-arc">
+                    <div class="inner-arc"></div>
+		            <div class="rectangle"></div>
+		        </div>
                 <img class="MyT" src="https://usaf.dps.mil/:u:/r/sites/a-staff/A1/A1H/Shared%20Documents/SharepointSystemFiles/MyTLogo.svg?csf=1&web=1&e=okGdWz" alt="">
                 <span class="material-symbols-outlin upgrade">upgrade</span>
                 <span class="material-symbols-outlined computer">computer</span>
@@ -76,9 +80,7 @@
         </section><!-- ‌Information End -->
         <div class="circle_orange"></div>
         <div class="circle_red"></div>
-        <div class="circle_gray">
-            <div class="diamond"></div>
-        </div>
+
         
     </div><!-- Library End -->
 </body>
@@ -120,33 +122,35 @@ body{
     border-radius:50%;
     aspect-ratio:1/1;
 }
-.circle_gray {
-    position: relative;
-    width: 70%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: #808080;
-    overflow: hidden;
-    top:10%;
-    left:16%;
-    z-index: 3;
-}
 /*=================
     Navigation
 ==================*/
 .navigation {
     display: flex;
-    width: 800px;
-    height:1000px;
-    margin-top: 10%;
+    width:75vw;
+    height:75vh;
+    margin-top: 0%;
     position:absolute;
     align-items:center;
+    background-color: pink;
+}
+.circle_gray {
+    position: absolute;
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #808080;
+    overflow: hidden;
+    top:50%;
+    left:40%;
+    z-index: 3;
+    transform: translate(-50%,-50%);
 }
 .white_round {
     position:relative;
     align-items:center;
-    width: 400px;
-    height: 400px;
+    width: 90%;
+    height: 90%;
     border-radius: 50%;
     background-color: #d5d5d5;
     z-index: 4;
@@ -155,6 +159,9 @@ body{
     display:flex;
     flex-direction: column;
     justify-content:center;
+    top:50%;
+    left:45%;
+    transform: translate(-50%,-50%);
 }
 .dashed {
     position: absolute;
@@ -163,7 +170,7 @@ body{
     border-radius: 50%;
     border-color: #808080;
     border-style: dashed;
-    border-width: 3px;
+    border-width: 2%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -175,7 +182,7 @@ body{
     border-radius: 50%;
     border-color: #808080;
     border-style: dotted;
-    border-width:4px;
+    border-width:3%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -186,29 +193,32 @@ body{
     width: 100%;
     height:100%;
     color: #E23B00;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size:400%;
+    font-size:8vw;
 }
 h1{
-    font-size: 260%;
+    position: absolute;
+    font-size: 3.5vw;
     color: #808080;
+    top:28%;
 }
 .p1 {
-    font-size: 145%;
+    font-size: 2vw;
     color: #808080;
     width: 75%;
     white-space: wrap;
     position:absolute;
-    padding-top: 15%;
+    top:44%;
 }
 .p2 {
-    font-size: 120%;
+    font-size: 1.5vw;
     color: #808080;
-    width: 75%;
+    width: 70%;
+    position: absolute;
     white-space: wrap;
-    transform: translateY(150%);
+    bottom:8%;
 }
 .top {
     position: absolute;
@@ -247,17 +257,34 @@ h1{
     right:2%;
 }
 .sections_half_circle{
-    position: absolute;
+    position: relative;
     height: 500px;
     width: 500px;
+    left:50%;
 }
 .outer-arc{
+    position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #d5d5d5; /* Orange color for the outer circle */
+}
+.inner-arc{
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    height: 85%;
+    background-color: black; /* Background color for the inner circle (hole) */
     border-radius: 50%;
-    background-color: #E23B00;
+    transform: translate(-50%,-50%);
+}
+.rectangle{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    background-color: black; /* Background color for the inner circle (hole) */
 }
 </style>
