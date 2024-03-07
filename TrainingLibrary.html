@@ -33,6 +33,7 @@
                 <div class="outer-arc">
                     <div class="inner-arc"></div>
 		            <div class="rectangle"></div>
+                    <svg class="arc" width="1005" height="2093" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden"><defs><linearGradient x1="1936.01" y1="191.773" x2="1936.01" y2="2284.35" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="stroke0"><stop offset="0" stop-color="#FFB347"/><stop offset="0.33" stop-color="#D2691E"/><stop offset="0.66" stop-color="#FF6F61"/><stop offset="1" stop-color="#FF5600"/></linearGradient></defs><g transform="translate(-1459 -192)"><path d="M1463.15 199.548C2036.4 225.325 2480.22 711.152 2454.45 1284.67 2430.25 1823.43 1998.24 2254.2 1459.66 2276.6" stroke="url(#stroke0)" stroke-width="14.8958" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/></g></svg>
 		        </div>
                 <img class="MyT" src="https://usaf.dps.mil/:u:/r/sites/a-staff/A1/A1H/Shared%20Documents/SharepointSystemFiles/MyTLogo.svg?csf=1&web=1&e=okGdWz" alt="">
                 <span class="material-symbols-outlin upgrade">upgrade</span>
@@ -132,7 +133,6 @@ body{
     margin-top: 0%;
     position:absolute;
     align-items:center;
-    background-color: pink;
 }
 .circle_gray {
     position: absolute;
@@ -252,29 +252,30 @@ h1{
     width: 5%;
     height:5%;
     aspect-ratio: 1/1;
-    background-color: #E23B00;
+    background-color: #e23b00;
     border-radius: 50%;
     right:2%;
 }
 .sections_half_circle{
     position: relative;
-    height: 500px;
-    width: 500px;
-    left:50%;
+    height: 82%;
+    aspect-ratio:1/1;
+    top:0%;
+    left:10.5%;
 }
 .outer-arc{
     position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background-color: #d5d5d5; /* Orange color for the outer circle */
+    height:100%;
+    width:100%;
+    border-radius: 50%;
+    background-color: #d5d5d5; /* Orange color for the outer circle */
 }
 .inner-arc{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 85%;
-    height: 85%;
+    width: 90%;
+    height: 90%;
     background-color: black; /* Background color for the inner circle (hole) */
     border-radius: 50%;
     transform: translate(-50%,-50%);
@@ -286,5 +287,11 @@ h1{
     width: 50%;
     height: 100%;
     background-color: black; /* Background color for the inner circle (hole) */
+}
+.arc {
+    position:absolute;
+    right: 0%;
+    z-index: 5;
+    rotate: 90deg;
 }
 </style>
