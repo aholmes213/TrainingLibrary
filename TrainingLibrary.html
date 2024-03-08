@@ -33,7 +33,19 @@
                 <div class="outer-arc">
                     <div class="inner-arc"></div>
 		            <div class="rectangle"></div>
-                    <svg class="arc" width="1005" height="2093" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden"><defs><linearGradient x1="1936.01" y1="191.773" x2="1936.01" y2="2284.35" gradientUnits="userSpaceOnUse" spreadMethod="reflect" id="stroke0"><stop offset="0" stop-color="#FFB347"/><stop offset="0.33" stop-color="#D2691E"/><stop offset="0.66" stop-color="#FF6F61"/><stop offset="1" stop-color="#FF5600"/></linearGradient></defs><g transform="translate(-1459 -192)"><path d="M1463.15 199.548C2036.4 225.325 2480.22 711.152 2454.45 1284.67 2430.25 1823.43 1998.24 2254.2 1459.66 2276.6" stroke="url(#stroke0)" stroke-width="14.8958" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/></g></svg>
+                    <div class="arc-container">
+                        <svg viewBox="0 0 1004 2093" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.15002 7.54797C577.4 33.325 1021.22 519.152 995.45 1092.67C971.25 1631.43 539.24 2062.2 0.660034 2084.6" stroke="url(#paint0_linear_3_6)" stroke-width="14.8958" stroke-miterlimit="8"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_3_6" x1="477.01" y1="-0.227027" x2="477.01" y2="2092.35" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FFB347"/>
+                                    <stop offset="0.33" stop-color="#D2691E"/>
+                                    <stop offset="0.66" stop-color="#FF6F61"/>
+                                    <stop offset="1" stop-color="#FF5600"/>
+                                    </linearGradient>
+                                </defs>
+                        </svg>
+                    </div>
 		        </div>
                 <img class="MyT" src="https://usaf.dps.mil/:u:/r/sites/a-staff/A1/A1H/Shared%20Documents/SharepointSystemFiles/MyTLogo.svg?csf=1&web=1&e=okGdWz" alt="">
                 <span class="material-symbols-outlin upgrade">upgrade</span>
@@ -257,11 +269,14 @@ h1{
     right:2%;
 }
 .sections_half_circle{
-    position: relative;
-    height: 82%;
-    aspect-ratio:1/1;
-    top:0%;
-    left:10.5%;
+    position: absolute;
+    width: 60%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    top:50%;
+    left:40%;
+    z-index: 2.5;
+    transform: translate(-50%,-50%);
 }
 .outer-arc{
     position: relative;
@@ -288,10 +303,14 @@ h1{
     height: 100%;
     background-color: black; /* Background color for the inner circle (hole) */
 }
-.arc {
-    position:absolute;
-    right: 0%;
-    z-index: 5;
-    rotate: 90deg;
+.arc-container{
+    position:relative;
+    display:flex;
+    height:95%;
+    width:100%;
+    overflow:hidden;
+    left:52%;
+    top:2.2%;
 }
+
 </style>
