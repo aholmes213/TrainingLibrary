@@ -50,8 +50,14 @@
                     <div class="orange1-mini"></div>
                     <div class="orange2-mini"></div>
                     <div class="red-mini"></div>
-                    <img class="MyT" src="https://usaf.dps.mil/:u:/r/sites/a-staff/A1/A1H/Shared%20Documents/SharepointSystemFiles/MyTLogo.svg?csf=1&web=1&e=okGdWz" alt="">
-                    <span class="material-symbols-outlin upgrade">upgrade</span>
+                    <div class="outline">
+                        <svg viewBox="0 0 1542 1553" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Vector">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M887.271 809.34H529.23L501.6 942.472H724.546V1336.32L871.553 1330.77C870.629 1202.26 869.704 1073.75 868.779 945.246L874.327 945.313V942.472H1094.98L1065.71 812.114L887.271 809.34ZM796.142 335.057L683.287 655.752L799.783 579.826L908.999 655.752L796.142 335.057ZM1149.3 0H1018.73L1020.28 0.568649L943.356 0H403.97L0 985.915L340.76 1553H508.74L600.507 1037.49H477.35L413.34 1421.63L137.19 948.939L470.19 137.464L1085.4 142.011L1407.03 937.571L1144.52 1423.9L1071.16 1037.49H1004.5L980.439 1040.04L959.174 1039.74L1045.04 1552.24L1042.96 1553H1232.69L1542 971.305L1149.3 0Z" fill="#808080"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="material-symbols-outlined upgrade">upgrade</span>
                     <span class="material-symbols-outlined computer">computer</span>
                     <span class="material-symbols-outlined school">school</span>
 		        </div>
@@ -69,7 +75,7 @@
                 <a href="https://usaf.dps.mil/:x:/r/sites/a-staff/A1/A1H/AFTAC Training Library/MyTraining Standard Operating Procedures/myTraining CFETP Tracker (as of 19 May 23).xlsx?d=wcf9b0e15195d47ccb44bfecec2bca357&csf=1&web=1&e=GEdlcg" target="_blank">CFETP Tracker</a>
                 <a href="https://tftr.josce.mil/#/Training/Profile" target="_blank">MyTraining Homes</a>
             </div>
-            <div class="upgrade">
+            <div class="upgrade_training">
                 <h2>Upgrade Training</h2>
             </div>
             <div class="ugt_links">
@@ -169,6 +175,7 @@ body{
     height: 90%;
     border-radius: 50%;
     background-color: #d5d5d5;
+    box-shadow:0 0 18px rgba(0,0,0,0.4);
     z-index: 4;
     text-align: center;
     margin:0 auto;
@@ -355,5 +362,61 @@ h1{
     box-shadow:0 0 6px rgba(0,0,0,0.2);
     bottom:5%;
     right:19%;
+}
+.outline{
+    position:absolute;
+    height: 10%;
+    width:10%;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    top:5%;
+    right:19%;
+}
+.outline svg{
+    height:80%;
+    width:80%;
+    transform: translate(12%,10%);
+}
+.upgrade {
+    display:flex;
+    top:30%;
+    right: 0%;
+    position:absolute;
+    height: 10%;
+    width:10%;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    align-items:center;
+    justify-content:center;
+    font-size: 550%;
+    color:#808080;
+}
+.computer {
+    display:flex;
+    bottom: 30%;
+    right: 0%;
+    position:absolute;
+    height: 10%;
+    width:10%;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    align-items:center;
+    justify-content:center;
+    font-size: 550%;
+    color:#808080;
+}
+.school{
+    display:flex;
+    bottom: 5%;
+    right: 19%;
+    position:absolute;
+    height: 10%;
+    width:10%;
+    border-radius: 50%;
+    background-color: #d5d5d5;
+    align-items:center;
+    justify-content:center;
+    font-size: 550%;
+    color:#808080;
 }
 </style>
