@@ -65,37 +65,37 @@
     	</section><!-- Navigation End -->
 
         <section class="information"><!-- Information -->
-            <div class="MyT_Title">
+            <div class="MyT_Title pill">
                 <h2>MyTraining</h2>
             </div>
-            <div class="myt_links">
+            <div class="myt links">
                 <a href="https://tftr.josce.mil/#/Training/Profile" target="_blank">MyTraining Home</a>
                 <a href="https://usaf.dps.mil/:b:/r/sites/a-staff/A1/A1H/AFTAC Training Library/MyTraining Standard Operating Procedures/myTraining User Guide.pdf?csf=1&web=1&e=GxVTV3" target="_blank">User Guide</a>
                 <a href="https://web.edapp.com/lessons/648b36fd3831bacd8389c8d9/" target="_blank">Supervisor Initial Evaluation</a>
                 <a href="https://usaf.dps.mil/:x:/r/sites/a-staff/A1/A1H/AFTAC Training Library/MyTraining Standard Operating Procedures/myTraining CFETP Tracker (as of 19 May 23).xlsx?d=wcf9b0e15195d47ccb44bfecec2bca357&csf=1&web=1&e=GEdlcg" target="_blank">CFETP Tracker</a>
                 <a href="https://tftr.josce.mil/#/Training/Profile" target="_blank">MyTraining Homes</a>
             </div>
-            <div class="upgrade_training">
+            <div class="upgrade_training pill">
                 <h2>Upgrade Training</h2>
             </div>
-            <div class="ugt_links">
+            <div class="ugt links">
                 <a href="https://tftr.josce.mil/#/Training/Profile" target="_blank">AF 2096 Template (PDF)</a>
                 <a href="https://usaf.dps.mil/:b:/r/sites/a-staff/A1/A1H/AFTAC Training Library/MyTraining Standard Operating Procedures/myTraining User Guide.pdf?csf=1&web=1&e=GxVTV3" target="_blank">AF 2096 Guide</a>
                 <a href="https://web.edapp.com/lessons/648b36fd3831bacd8389c8d9/" target="_blank">AF 2096 PSDG</a>
                 <a href="https://usaf.dps.mil/:x:/r/sites/a-staff/A1/A1H/AFTAC Training Library/MyTraining Standard Operating Procedures/myTraining CFETP Tracker (as of 19 May 23).xlsx?d=wcf9b0e15195d47ccb44bfecec2bca357&csf=1&web=1&e=GEdlcg" target="_blank">Time in Training</a>
             </div>
-            <div class="tfat">
+            <div class="tfat pill">
                 <h2>Total Force Awareness Training</h2>
             </div>
-            <div class="tfat_links">
+            <div class="ancil links">
                 <a href="https://tftr.josce.mil/#/Training/Profile" target="_blank">MyLearning Home</a>
                 <a href="https://usaf.dps.mil/:b:/r/sites/a-staff/A1/A1H/AFTAC Training Library/MyTraining Standard Operating Procedures/myTraining User Guide.pdf?csf=1&web=1&e=GxVTV3" target="_blank">Mandatory Training Courses (Civilian)</a>
                 <a href="https://web.edapp.com/lessons/648b36fd3831bacd8389c8d9/" target="_blank">Mandatory Training Courses (Military)</a>
             </div>
-            <div class="formal_training">
+            <div class="formal_training pill">
                 <h2>Formal Training</h2>
             </div>
-            <div class="formaltrng_links">
+            <div class="formaltrng links">
                 <a href="https://tftr.josce.mil/#/Training/Profile" target="_blank">Training Requests to AFTAC TMs (Training Monitors only)</a>
                 <a href="https://usaf.dps.mil/:b:/r/sites/a-staff/A1/A1H/AFTAC Training Library/MyTraining Standard Operating Procedures/myTraining User Guide.pdf?csf=1&web=1&e=GxVTV3" target="_blank">SF 182 (Military)</a>
             </div>
@@ -418,5 +418,56 @@ h1{
     justify-content:center;
     font-size: 550%;
     color:#808080;
+}
+/*============
+Information
+============*/
+
+.information{
+    display: flex;
+    flex-direction:column;
+    width:75vw;
+    height:75vh;
+    left: 50%;
+    margin-top: 0%;
+    position:absolute;
+    align-items:center;
+    z-index:4;
+
+}
+.pill {
+    background-color: white;
+    box-shadow: 5px 10px 45px black inset;
+    height: 10%;
+    width:50%;
+    text-align:center;
+    border-radius:25vh;
+    font-size: 1.5vw;
+    color: #808080;
+    line-height:100%;
+}
+.MyT_Title{
+    background-image: linear-gradient(to bottom right, #FFB347 40%, #FFDAB9 100%);
+}
+.upgrade_training{
+    background-image: linear-gradient(to bottom right, #D2691E 40%, #FFB36D 100%);
+}
+.MyT_Title{
+    background-image: linear-gradient(to bottom right, #FF6F61 40%, #FDD0CB 100%);
+}
+.MyT_Title{
+    background-image: linear-gradient(to bottom right, #E23B00 40%, #FFAC8F 100%);
+}
+.links {
+    background-color: white;
+    box-shadow: 5px 10px 45px black inset;
+    height:40%;
+    width:62.5%;
+    text-align:center;
+    border-radius:100px;
+    font-size: 1.5vw;
+    color: #808080;
+    line-height:100%;
+    position:absolute;
 }
 </style>
