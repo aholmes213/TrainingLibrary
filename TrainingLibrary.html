@@ -382,11 +382,13 @@ h1{
     background-color: #d5d5d5;
     top:5%;
     right:19%;
+    cursor:pointer;
 }
 .outline svg{
     height:80%;
     width:80%;
     transform: translate(12%,10%);
+    cursor:pointer;
 }
 .upgrade {
     display:flex;
@@ -401,6 +403,8 @@ h1{
     justify-content:center;
     font-size: 550%;
     color:#808080;
+    animation: moveRight 1s ease-in-out;
+    animation-fill-mode: forwards;
 }
 .computer {
     display:flex;
@@ -536,7 +540,26 @@ li::before {
     bottom:30%;
     right:5%;
 }
+
+@keyframes moveRight{
+    from {right: 0%;}
+    to {right: -10%;}
+}
+
+
+
+
 </style>
 <script>
-    
+    var upgrade= document.querySelector(".upgrade");
+
+    upgrade.addEventListener("animationend", function() {
+        upgrade.classList.remove("animated");
+    });    
+
+    upgrade.addEventListener("click", function() {
+        upgrade.classList.add("animated");
+    });
+
+
 </script>
